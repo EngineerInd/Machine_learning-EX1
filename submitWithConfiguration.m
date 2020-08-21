@@ -2,7 +2,7 @@ function submitWithConfiguration(conf)
   addpath('./lib/jsonlab');
 
   parts = Parts(conf); % Updated
-
+% if you got any error  then change line 4 as -  part = Parts(conf); % Updated (means change LHS parts to Part)
   fprintf('== Submitting solutions | %s...\n', conf.itemName);
 
   tokenFile = 'token.mat';
